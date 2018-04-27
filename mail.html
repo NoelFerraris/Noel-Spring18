@@ -1,0 +1,61 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>CSS basics, Session 3</title>
+  <style>
+    * { margin: 0; }
+
+    .rectangle{
+      background: grey;
+      outline-style: solid: 2px ;
+      outline-color: grey;
+      width:120px;
+      height: 70px;
+      margin:0px;
+      position: relative;
+      left: 55px;
+      top: 20px;
+      z-index: -50;
+    }
+    .tip{
+      background: black;
+      width:120px;
+      border: white 2px;
+      height: 35px;
+      margin:0px;
+      position: relative;
+      left: 55px;
+      top: 55px;
+      clip-path: polygon(0 0, 100% 0, 50% 100%, 50% 100%);
+      z-index: 50;
+
+
+    }
+    .flap{
+      background: grey;
+      width:120px;
+      border: white 2px;
+      height: 35px;
+      margin:0px;
+      position: relative;
+      left: 55px;
+      top: 88px;
+      clip-path: polygon(0 0, 100% 0, 50% 100%, 50% 100%);
+      z-index: 100;
+
+
+    }
+    </style>
+
+  </head>
+
+  <body>
+    <div class="flap">
+    </div>
+    <div class="tip">
+    </div>
+    <div class="rectangle">
+    </div>
+
+
+  </body>

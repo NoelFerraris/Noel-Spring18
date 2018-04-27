@@ -1,0 +1,64 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>CSS basics, Session 3</title>
+  <style>
+    * { margin: 0; }
+    .tip{
+      background: gray;
+      width:10px;
+      height: 15px;
+      margin:0px;
+      position: relative;
+      left: 47px;
+      top: 10px;
+      clip-path: polygon(0 0, 100% 0, 50% 100%, 50% 100%);
+      z-index: 50;
+    }
+    .rectangle{
+      background: gray;
+      width:10px;
+      height: 200px;
+      margin:0px;
+      position: relative;
+      left: 47px;
+      top: 20px;
+    }
+    .tip1{
+      background: black;
+      width:10px;
+      height: 15px;
+      margin:0px;
+      position: relative;
+      left: 47px;
+      top: 20px;
+      clip-path: polygon(0 0, 100% 0, 50% 100%, 50% 100%);
+      z-index: -50;
+    }
+    .top{
+      background: grey;
+      width:10px;
+      height: 5px;
+      margin:0px;
+      border: 2px solid grey;
+      border-radius: 25px 25px 0px 0px ;
+      position: relative;
+      left: 47px;
+      top: 20px;
+      border: 2px grey;
+    }
+    </style>
+
+    <head>
+
+      <body>
+        <div class="top">
+        </div>
+        <div class="rectangle">
+        </div>
+        <div class="tip1">
+        </div>
+        <div class="tip">
+        </div>
+
+      </body>

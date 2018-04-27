@@ -1,0 +1,99 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>CSS basics, Session 3</title>
+  <style>
+    * { margin: 0; }
+    .rectangle{
+      background: green;
+      width:85px;
+      height: 30px;
+      margin:0px;
+      position: relative;
+      left: 55px;
+      top: 20px;
+    }
+    .line{
+      background: green;
+      width:90px;
+      height: 15px;
+      margin:0px;
+      position: relative;
+      left: 52px;
+      top: 25px;
+    }
+    .neck{
+      background: rgba(197, 243, 254, .5);
+      width:80px;
+      height: 40px;
+      margin:0px;
+      position: relative;
+      left: 57px;
+      top: 30px;
+    }
+    .body1{
+      background:rgba(197, 243, 254, .5);
+      width: 125px;
+      height:60px;
+      margin:0px;
+      z-index: -50;
+      position: relative;
+      left: 34px;
+      top: 32px;
+       border: 3px rgba(197, 243, 254, .5);
+       -webkit-clip-path: polygon(10% 0, 90% 0, 100% 100%, 0 100%);
+       clip-path: polygon(10% 0, 90% 0, 100% 100%, 0 100%);
+    }
+    .body2{
+      background: rgba(197, 243, 254, .5);
+      width:125px;
+      height: 50px;
+      margin:0px;
+      position: relative;
+      left: 35px;
+      top: 30px;
+    }
+    .body3{
+      background: rgb(0, 0, 255, .5);
+      width:125px;
+      height: 150px;
+      margin:0px;
+      position: relative;
+      left: 35px;
+      top: 30px;
+      border: 2px rgb(0, 0, 255, .5) ;
+    }
+    .bottom{
+      background: rgb(197, 243, 254, .5);
+      width:125px;
+      height: 40px;
+      margin:0px;
+      border: 2px solid rgb(197, 243, 254, .5);
+      border-radius: 0px 0px 25px 25px ;
+      position: relative;
+      left: 35px;
+      top: 30px;
+      border: 2px rgb(197, 243, 254, .5) ;
+    }
+
+    </style>
+
+  </head>
+
+  <body>
+<div class="rectangle">
+</div>
+<div class="line">
+</div>
+<div class="neck">
+</div>
+<div class="body1">
+</div>
+<div class="body2">
+</div>
+<div class="body3">
+</div>
+<div class="bottom">
+</div>
+
+  </body>
