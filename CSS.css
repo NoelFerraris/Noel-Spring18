@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css?family=Gugi');
+body {
+  padding: 50px;
+  background-color: #D7E4FE;
+  margin:0;
+  font-family: 'Gugi', cursive;
+}
+
+Header {
+
+  border: 2px solid blue;
+  border-radius: 20px,20px,20px,40px;
+  background: rgba(103, 115, 134,.5)
+  width: 500px;
+  padding: 15px;
+  box-sizing: border;
+}
+.fullwidth{
+  width: 100vw;
+}
+
+#special{
+  background: rgba(255, 0, 0, 0.5);
+}
