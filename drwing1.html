@@ -1,0 +1,89 @@
+<html>
+  <head>
+    <title>Grid 1 Demo</title>
+    <style>
+        body * {  background: rgb(255,255,255)}
+
+        .container{ display: grid;
+          grid-template-columns: 10% 20% 30%;
+          grid-column-gap:  1px;
+
+
+
+        }
+
+        .container1{ display: grid;
+          grid-template-columns: 50% 10% 10%;
+          grid-column-gap:  1px;
+          z-index: 100;
+        }
+        .nav {background: rgba(0, 40, 104, 0.5);
+          margin:0px;
+          width:400px;
+          height: 100px;
+          z-index: 50;
+
+        }
+
+
+        .Block1{
+          background: rgba(22, 79, 34,0.5);
+          width: 500px;
+          height: 50px;
+          z-index: 1;
+
+        }
+        .circle{
+          background: rgba(298,68,88,0.5);
+          width: 100px;
+          height: 90px;
+          z-index: 3;
+          border-radius: 50%;
+
+        }
+
+    </style>
+
+  </head>
+
+  <body>
+
+    <div class="container">
+      <div class="Block1"> </div>
+      <div class="nav">
+      </div>
+      <div class="circle">
+      </div>
+      <div class="Block1"> </div>
+      <div class="nav">  </div>
+      <div class="circle">
+      </div>
+      <div class="Block1"> </div>
+      <div class="nav">
+      </div>
+      <div class="circle">
+      </div>
+    </div>
+    <div class="container1">
+      <div class="Block1"> </div>
+      <div class="nav">
+      </div>
+      <div class="circle">
+      </div>
+      <div class="Block1"> </div>
+      <div class="nav">  </div>
+      <div class="circle">
+      </div>
+      <div class="Block1"> </div>
+      <div class="nav">
+      </div>
+      <div class="circle">
+      </div>
+    </div>
+
+
+
+
+  </body>
+
+  </html>
