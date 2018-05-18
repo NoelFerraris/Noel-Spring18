@@ -6,7 +6,7 @@
       }
       section{
         display:flex;
-        flex-wrap: wrap;
+
 
 
 
@@ -16,17 +16,26 @@
       background: yellow;
       display: flex;
       align-items: center;
+      flex-grow: 1;
+      flex-shrink: 3;
       width: 400px;
         }
+      div:hover {background:blue}
       .block1{
         background-color: red;
+        display: flex;
         width:50px;
         flex-basis: 400px;
+        flex-grow: 2;
+        flex-shrink: 3;
       }
       .block2{
-        background-color: green;
-        flex-basis: 400px;
+        background-color: black;
+        display:flex;
+        flex-basis: 500px;
         width: 50px;
+        flex-grow: 1;
+        flex-shrink: 2;
       }
       img {
         position: relative;
@@ -34,6 +43,21 @@
         bottom: 100px;
         width:500;
         height:500;
+      }
+
+      @media (min-height 100px){
+        .block1{
+          background: blue;
+        }
+        section{flex-direction: row;}
+        section{display: none;}
+        div{height: 100%;}
+      }
+      @media (min-width: 768px) {
+      .block1{ background: blue}
+      }
+      @media (min-width 200px){
+        .block2{background-color: green}
       }
     </style>
   </head>

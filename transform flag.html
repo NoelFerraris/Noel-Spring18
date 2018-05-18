@@ -1,0 +1,82 @@
+<html>
+  <head>
+      <style>
+
+      .container{width:60vw; height: 40vw;display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column-gap:  1px;
+
+      }
+
+      div{
+        transition: 2s all; }
+
+        .green {
+        background: green; margin: 0px;
+        transition: 1s all;
+        z-index: 20;
+        grid-row:1/3;
+      grid-column: 2/5;}
+
+        .red{
+          width:300px;
+          background: red;
+          z-index: 99;
+          grid-row: 1/4;
+          grid-column: 1/4;
+
+        }
+
+        img {
+          width:500px;
+          height:500px;
+          z-index: 100;
+          grid-row: 2/3;
+          grid-column: 2/3;
+          justify-self:center;
+          align-self: center;
+
+        }
+/*
+        div:hover { background: blue;
+        animation: myanimation 5s infinite; /* IE 10+, Fx 29+ */
+*/
+        }
+
+        @keyframes myanimation {
+          0%   { opacity: 1; margin-left: 0; }
+          100% { opacity: 0; margin-left: 100px; }
+        }
+
+
+        #id { background: yellow; }
+        .wide { margin-top: 0px; width: 100vw; }
+      </style>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  </head>
+  <body>
+
+
+    <div class="container">
+
+        <div class="red"></div>
+        <div class="green"></div>
+        <img src="star.svg">
+
+
+
+
+        <script>
+          $(".red").mouseover(function() {
+            $("div").addClass("wide");
+          });
+          $(".red").click(function() {
+            $("div").removeClass("wide");
+          });
+          </script>
+      </div>
+
+  </body>
+<html>
