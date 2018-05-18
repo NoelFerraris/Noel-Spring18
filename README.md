@@ -10,3 +10,7 @@ Week 1 drawings
 Week 2 drawings
 *https://noelferraris.github.io/Noel-Spring18/drwing1
 *https://noelferraris.github.io/Noel-Spring18/drwing2
+
+week 3 flag
+
+https://noelferraris.github.io/Noel-Spring18/transform%20flag
